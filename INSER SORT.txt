@@ -1,0 +1,24 @@
+PROCEDURE swap(VAR xp,VAR yp :INTEGER)
+VAR
+tmp : INTEGER;
+BEGIN
+tmp:=xp;
+xp:=yp;
+yp:=tmp;
+END
+/****INSERTION SORT****/
+PROCEDURE insertion_sort(VAR tab:ARRAY_OF INTEGER)
+VAR
+i,j,x:INTEGER;
+BEGIN
+n:=tab.length;
+FOR i FORM 0 TO n-1 STEP 1 DO
+x:=arr[i]
+j:=i;
+WHILE (j >= 0 AND arr[j-1] > current) DO
+arr[j]:=arr[j-1];
+j:=j-1;
+END WHILE
+arr[j]:=x;
+END FOR
+END
